@@ -1,0 +1,50 @@
+.destaque{
+    max-width: 1170px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagemDestaque{
+    background-image: url(https://www.4fit.com.br/wp-content/uploads/2021/07/4fit-postblog-natacao_blog.png);
+    background-size: cover; 
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;   
+    display: flex;
+    align-items: flex-end; 
+}
+
+div .imagemDestaque div{
+    padding: 10px;
+}
+
+div .imagemDestaque h2{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;    
+    text-shadow: 1px 1px 1px #000;
+}
+
+div .imagemDestaque .detalhes{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+
+div .texto{
+    max-width: 30%;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div .textoPostagem p{
+    margin-top: 10px;
+    line-height: 1.5rem;
+}
