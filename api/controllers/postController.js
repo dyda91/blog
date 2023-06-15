@@ -1,6 +1,6 @@
-const { Post: PostModel } = require("../models/post");
+const Post = require("../models/post");
 
-const postController = {
+const PostController = {
 
     create: async(req, res) => {
         
@@ -8,22 +8,24 @@ const postController = {
             
             const post = {
                 title: req.body.title,
-                subtitle: req.bady.subtitle,
-                image: req.bady.image,
-                text: req.bady.text,
-                // user: req.bady.user,
+                subtitle: req.body.subtitle,
+                image: req.body.image,
+                text: req.body.text,
+                // user: req.body.user,
             };
-
-            const response = await PostModel.create(post); 
-            res.status(201).json({response, msg: "Postagem criada com sucesso!"})
-
+            
+            const response = await Post.create(post); 
+            console.log(response)
+            res.status(201).json({response, msg: "Postagem criada com sucesso!"});
+            
         } catch (error) {
             console.log(error);
         }
-
     }
+
+    
 
 };
 
 
-module.exports = postController;
+module.exports = PostController;

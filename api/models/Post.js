@@ -22,9 +22,9 @@ const postSchema = new Schema({
         required: true,
     },
 
-    // user: {
-    //     type: [userSchema],
-    // }
+    user: {
+        type: [userSchema],
+    }
     
 },
 
