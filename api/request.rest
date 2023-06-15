@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/post
+Content-Type: application/json
+
+{
+    "title": "Teste inicial",
+    "subtitle": "Subtitulo inicial",
+    "image": "https://poolrescue.com.br/wp-content/uploads/2016/04/nata%C3%A7%C3%A3o-1200x800.jpg",
+    "text": "Lorem ipsum dolor sit amet", 
+}
