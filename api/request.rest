@@ -7,3 +7,25 @@ content-type: application/json
     "image": "https://poolrescue.com.br/wp-content/uploads/2016/04/nata%C3%A7%C3%A3o-1200x800.jpg",
     "text": "Lorem ipsum dolor sit amet"
 }
+
+
+###
+GET  http://localhost:3000/api/post
+
+
+###
+GET  http://localhost:3000/api/post/648b9eec3198494678f7c69d
+
+###
+DELETE   http://localhost:3000/api/post/648b9eec3198494678f7c69d
+
+###
+put http://localhost:3000/api/post/648b9e893992cd6f7c393159
+content-type: application/json
+
+{
+    "title": "Teste inicial atualizado",
+    "subtitle": "Subtitulo inicial",
+    "image": "https://poolrescue.com.br/wp-content/uploads/2016/04/nata%C3%A7%C3%A3o-1200x800.jpg",
+    "text": "Lorem ipsum dolor sit amet"
+}
