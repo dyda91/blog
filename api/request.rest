@@ -2,10 +2,10 @@ POST http://localhost:3000/api/post
 content-type: application/json
 
 {
-    "title": "Teste inicial",
+    "title": "Teste quatro",
     "subtitle": "Subtitulo inicial",
-    "image": "https://poolrescue.com.br/wp-content/uploads/2016/04/nata%C3%A7%C3%A3o-1200x800.jpg",
-    "text": "Lorem ipsum dolor sit amet"
+    "image": "https://mundoentrenamiento.com/wp-content/uploads/2020/04/tenis-en-etapas-de-formacion.jpeg",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
 }
 
 
@@ -17,15 +17,15 @@ GET  http://localhost:3000/api/post
 GET  http://localhost:3000/api/post/648b9eec3198494678f7c69d
 
 ###
-DELETE   http://localhost:3000/api/post/648b9eec3198494678f7c69d
+DELETE   http://localhost:3000/api/post/648b9f1f4cc89f9b33f76c33
 
 ###
-put http://localhost:3000/api/post/648b9e893992cd6f7c393159
+put http://localhost:3000/api/post/648cfc50284caed7e337d75c
 content-type: application/json
 
 {
     "title": "Teste inicial atualizado",
     "subtitle": "Subtitulo inicial",
     "image": "https://poolrescue.com.br/wp-content/uploads/2016/04/nata%C3%A7%C3%A3o-1200x800.jpg",
-    "text": "Lorem ipsum dolor sit amet"
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 }

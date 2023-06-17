@@ -48,6 +48,7 @@ const PostController = {
             }
 
             res.json(post);
+            
 
         } catch (error) {
             console.log(error);

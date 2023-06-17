@@ -1,15 +1,22 @@
 import './post.css'
+const moment = require('moment');
 
-function Posts() {
+
+function Posts({post}) {
+    const formattedDate = moment(post.date).utc().format('DD/MM/YY')
+
+
   return (
         <div className='post'>
-            <div className="imagemPost">
+            <div className="imagemPost" style={{
+             backgroundImage: `url(${post.image})`
+    }}>
                 <img src="" alt="" />
             </div>
             <div className="textoPost">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <h3>{post.title}</h3>
                 <div className="detalhes">
-                    <span className='tempoPostagem'>1 hora atraz</span>
+                    <span className='tempoPostagem'>{formattedDate}</span>
                     <span className='autor'>Admin</span>    
                 </div>            
 

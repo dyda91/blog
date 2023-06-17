@@ -1,0 +1,18 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    }
+  
+  
+  .container{
+    max-width: 1170px !important;
+  }
+  
+  div h1{
+    width: 100%;
+    height: 10%;
+  }
+  
