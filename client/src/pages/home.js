@@ -5,6 +5,7 @@ import Posts from '../components/posts/posts';
 import axios from "axios"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
+import Footer from '../components/footer/footer';
 
 const url = "http://localhost:3000/api/post"
 
@@ -15,7 +16,7 @@ function Home() {
     useEffect (() => {
         const fetchPosts = async () =>{
            const res = await axios.get(url)
-           setDestaque(res.data[0])
+           setDestaque(res.data.reverse()[0])
            setPostagem(res.data)
         }
         fetchPosts()
@@ -26,6 +27,7 @@ function Home() {
         <h1>Destaque</h1>
         <Destaque destaque ={destaque} />
         <Posts post={postagem}/>
+        <Footer />
       </div>
     );
   }

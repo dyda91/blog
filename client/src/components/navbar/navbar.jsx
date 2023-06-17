@@ -14,7 +14,7 @@ function NavScroll() {
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container fluid >
-            <Navbar.Brand href="#" className='logo'><span>Portal</span> Deda</Navbar.Brand>
+            <Navbar.Brand href="#" className='logo'><span>Portal</span>Deda</Navbar.Brand>
             <div className='d-flex justify-content-end'>
             <Form className="d-flex me-3">
                   <Form.Control

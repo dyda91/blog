@@ -1,0 +1,71 @@
+  .footer {
+    padding: 2rem 0;
+    margin-top: 10rem;
+  }
+  
+  .ft-1 h3 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+  }
+
+  .ft-1 span {
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .ft-1 p {
+    padding: 0rem 5rem 0.8rem 0;
+    font-weight: 400;
+  }
+  
+  .footer-icons a {
+    padding: 0.4rem 0.5rem;
+    color: #000;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+  }
+  
+  
+  .footer h5 {
+    color: #000;
+  }
+  
+  .ft-2 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .ft-2 ul li {
+    padding: 0.35rem 0;
+    font-weight: 400;
+  }
+  
+  .ft-2 ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.06rem;
+  }
+  
+  .ft-3 p {
+    font-weight: 400;
+    padding: 0.1rem 0;
+    font-size: 1.06rem;
+  }
+  
+  .ft-3 i {
+    padding-right: 0.5rem;
+  }
+  
+  .last-footer {
+    text-align: center;
+  }
+  
+  .last-footer p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
