@@ -6,6 +6,7 @@
 }
 
 div .imagemPost{
+    background-image: url("https://thelogisticsworld.com/wp-content/uploads/2020/10/Logistica-digital-criterios-para-elegir-la-mejor-tecnologia-en-la-nube-scaled.jpg");
     background-size: cover;   
     width: 100%;
     height:70%;
@@ -26,11 +27,6 @@ div .textoPost{
 
 div div h3{
     font-size: 1.2rem;
-    
-}
-
-.detalhes{
-    display: flex;
-    gap: 10px;
-    color: #888;
+    color: #138305;
+    font-weight: 700;
 }
