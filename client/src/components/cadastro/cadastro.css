@@ -1,0 +1,13 @@
+.form{
+    padding: 5px;
+    color:#138305;
+}
+
+.form input{
+    border: 1px solid #138305 !important;
+}
+
+.erroCadastro{
+    color: red;
+    padding-left: 15px;
+}

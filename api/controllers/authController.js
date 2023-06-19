@@ -1,4 +1,4 @@
-const User = require("../models/user.js");
+const { User } = require("../models/user");
 const bcrypt = require("bcryptjs");
 const jwt =  require("jsonwebtoken");
 
@@ -11,25 +11,29 @@ class AuthController {
         
     }
 
-    static userRegister = async(request,response) => {
-        const { email, name, password } = request.body;
+    static userRegister = async(req,res) => {
+        const {username, email, password } = req.body;
+        console.log(req.body)
 
-        const possibleUser = await User.findOne({email})
+        const possibleUser = await User.findOne({username})
+        const possibleEmail = await User.findOne({email})
         if (possibleUser)
-            return response.status(400).send({error: "Usuário com e-mail já cadastrado"})
+            return res.status(400).send({error: "Usuário com e-mail já cadastrado!"})
+        if(possibleEmail)
+            return res.status(400).send({error: "Username já em uso!"})
 
-        const user = await User.create({email, name, password})
+        const user = await User.create({username, email, password})
         user.password = undefined;
-        return response.status(200).send(
+        return res.status(200).send(
             {"message": "Usuário cadastrado com sucesso!",
             user
         })
     }
 
     static auth = async (req,res)=> {
-        const {email, password} = req.body;
+        const {username, password} = req.body;
 
-        const user = await User.findOne({email}).select("+password")
+        const user = await User.findOne({username}).select("+password")
 
 
         if (!user)
@@ -41,11 +45,11 @@ class AuthController {
             return res.status(400).send({error: "Senha Invalida!"})  
 
         user.password = undefined;
-        return res.send({
-            user,
-            token: this.gerarToken({id: user.id })
-
+        return res.status(200).send({
+            user, 
+            token: this.gerarToken({id: user.id }),
         })
+        
 
 
     }

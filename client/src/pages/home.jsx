@@ -24,12 +24,12 @@ function Home() {
     },[])
     return (
       <div className='container'>
-        <NavScroll />
+        <NavScroll /> 
         <h1>Destaque</h1>
         <Destaque destaque ={destaque} />
-        <hr class="mt-5 mb-3"/>
+        <hr className="mt-5 mb-3"/>
         <Posts post={postagem}/>
-        <hr class="mt-5 mb-3"/>
+        <hr className="mt-5 mb-3"/>
         <Categorias />
         <Footer />
       </div>
