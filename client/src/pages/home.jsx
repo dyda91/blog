@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
-import NavScroll from '../components/navbar/navbar';
 import Destaque from '../components/destaque/destaque';
 import Posts from '../components/posts/posts';
 import Categorias from '../components/categorias/categorias';
 import axios from "axios"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
-import Footer from '../components/footer/footer';
+
 
 const url = "http://localhost:3000/api/post"
 
@@ -23,15 +21,13 @@ function Home() {
         fetchPosts()
     },[])
     return (
-      <div className='container'>
-        <NavScroll /> 
+      <div>
         <h1>Destaque</h1>
         <Destaque destaque ={destaque} />
         <hr className="mt-5 mb-3"/>
         <Posts post={postagem}/>
         <hr className="mt-5 mb-3"/>
         <Categorias />
-        <Footer />
       </div>
     );
   }

@@ -17,7 +17,7 @@ GET  http://localhost:3000/api/post
 GET  http://localhost:3000/api/post/648b9eec3198494678f7c69d
 
 ###
-DELETE   http://localhost:3000/api/post/648b9f1f4cc89f9b33f76c33
+DELETE   http://localhost:3000/api/post/648e6c39fcd31d627c7ad0c5
 
 ###
 put http://localhost:3000/api/post/648cfc50284caed7e337d75c

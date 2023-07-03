@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom';
 import './navbar.css'
 
 function NavScroll() {
+  let currentUser = localStorage.getItem('user');
+  console.log(currentUser)
   return (
     <>
       {[false].map((expand) => (
@@ -25,6 +27,7 @@ function NavScroll() {
                   placeholder="Buscar"
                   className="me-1"
                   aria-label="Search"
+                  name='buscar'
                 />
                 <Button variant="outline-success">Buscar</Button>
               </Form>

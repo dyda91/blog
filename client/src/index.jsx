@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Home from './pages/home';
+import Postagem from './components/postagem/postagem';
 import Error from './components/error/error';
 import { ContextProvider } from "./context/context"
 
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path:"/postar",
+        element: <Postagem />
       }
 
     ]
