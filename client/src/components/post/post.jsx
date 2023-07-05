@@ -1,4 +1,7 @@
 import './post.css'
+import { Link } from 'react-router-dom';
+
+
 const moment = require('moment');
 
 
@@ -11,10 +14,10 @@ function Posts({post}) {
             <div className="imagemPost" style={{
              backgroundImage: `url(${post.image})`
     }}>
-                <img src="" alt="" />
+            
             </div>
             <div className="textoPost">
-                <h3>{post.title}</h3>
+                <Link to={`/noticia/${post._id}`}><h3>{post.title}</h3></Link>
                 <div className="detalhes">
                     <span className='tempoPostagem'>{formattedDate}</span>
                     <span className='autor'>Admin</span>    

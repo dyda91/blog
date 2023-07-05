@@ -34,7 +34,7 @@ function Login() {
   return (
     <Form className='form' onSubmit={handleSubmit}>
       <Form.Group as={Row} className="mb-3">
-        <Form.Label column sm="2">
+        <Form.Label column sm="2" className='alinhar'>
           Username:
         </Form.Label>
         <Col sm="10">
@@ -42,8 +42,8 @@ function Login() {
         </Col>
       </Form.Group>
 
-      <Form.Group as={Row} className="mb-3">
-        <Form.Label column sm="2">
+      <Form.Group as={Row} className="mb-3 alinhar">
+        <Form.Label column sm="2" className='alinhar'>
           Senha:
         </Form.Label>
         <Col sm="10">

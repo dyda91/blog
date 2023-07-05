@@ -1,5 +1,5 @@
 import './posts.css'
-import Post from './post/post'
+import Post from '../post/post'
 
 function Posts({post}) {
 
