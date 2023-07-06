@@ -1,0 +1,10 @@
+version: '2'
+services:
+  backend:
+    build: api
+    ports:
+      - "3000:3000"
+  frontend:
+    build: client
+    ports:
+      - "5000:5000"

@@ -13,7 +13,6 @@ import './navbar.css'
 
 function NavScroll() {
   let currentUser = localStorage.getItem('user');
-  console.log(currentUser)
   return (
     <>
       {[false].map((expand) => (

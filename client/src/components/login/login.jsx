@@ -23,14 +23,12 @@ function Login() {
         username: userRef.current.value,
         password: passwordRef.current.value
       })
-      console.log(userRef.current.value,)
       dispatch({type:"LOGIN_SUCCESS", payload: res.data});
       window.location.replace("/")
    } catch (error) {
     dispatch({type:"LOGIN_FAILURE"});
    }
   }
-  console.log(user)
   return (
     <Form className='form' onSubmit={handleSubmit}>
       <Form.Group as={Row} className="mb-3">
