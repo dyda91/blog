@@ -1,0 +1,21 @@
+.logo{
+    font-weight: bold;
+    height: 40px;
+    border: 2px solid #138305;
+    border-radius: 10px;
+    padding: 6px 10px 4px 0px;
+    color: #138305;
+}
+
+.firstLogo{
+    border-radius: 10px;
+    width: 113px;
+    height: 100%;
+    padding: 9px 7px 9px ;
+    margin-right: 2px;
+    color: #fff;
+    background-color: #138305;
+    margin-left: -1px;
+}
+
+

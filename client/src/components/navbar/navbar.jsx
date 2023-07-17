@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Login from '../login/login';
 import Cadastro from '../cadastro/cadastro';
+import Logo from '../logo/logo';
 import { Link } from 'react-router-dom';
 
 import './navbar.css'
@@ -18,7 +19,7 @@ function NavScroll() {
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container fluid >
-            <Link to={"/"} className='logo'><span>Portal</span>Deda</Link>
+            <Link to={"/"}> <Logo /></Link>
             <div className='d-flex justify-content-end'>
               <Form className="d-flex me-3">
                 <Form.Control

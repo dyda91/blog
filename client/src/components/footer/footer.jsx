@@ -1,4 +1,5 @@
 import './footer.css'
+import Logo from '../logo/logo'
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaPhone, FaEnvelope} from "react-icons/fa"
 import { BsFillSendFill }from "react-icons/bs"
 
@@ -13,7 +14,7 @@ function Footer(){
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-6 col-lg-5 col-12 ft-1">
-                            <h3><span>Portal</span>Deda</h3>
+                            <Logo />
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ea quo ex ullam laboriosam magni totam, facere eos iure voluptate.</p>
                             <div className="footer-icons">
                                 <a href='https://www.facebook.com/djalma.dida.almeida/'><FaFacebook /></a>
