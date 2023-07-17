@@ -1,12 +1,13 @@
   .footer {
     padding: 2rem 0;
     margin-top: 10rem;
+    color: #138305;
   }
   .ft-1 h3 {
     font-weight: 700;
     letter-spacing: 2px;
     padding: 0.5rem 0;
-    color: #000;
+    color: #138305;
   }
 
 
@@ -18,14 +19,14 @@
   
   .footer-icons a {
     padding: 0.4rem 0.5rem;
-    color: #000;
+    color: #138305;
     margin: 0 0.5rem;
     border-radius: 50%;
   }
   
   
   .footer h5 {
-    color: #000;
+    color: #138305;
   }
   
   .ft-2 ul {
@@ -40,7 +41,7 @@
   
   .ft-2 ul a {
     text-decoration: none;
-    color: #000;
+    color: #138305;
     font-size: 1.06rem;
   }
   
@@ -65,9 +66,5 @@
   }
 
 
-  .logo{
-    width: 113px !important;
-    height: 40px;
-}
 
 
